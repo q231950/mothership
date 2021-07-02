@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B7CA301268FAE5400E1B7BB /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7CA300268FAE5400E1B7BB /* HomeCoordinator.swift */; };
 		3BE7F999268E5436007E84F3 /* MothershipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE7F998268E5436007E84F3 /* MothershipApp.swift */; };
-		3BE7F99B268E5436007E84F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE7F99A268E5436007E84F3 /* ContentView.swift */; };
 		3BE7F99D268E5438007E84F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BE7F99C268E5438007E84F3 /* Assets.xcassets */; };
 		3BE7F9A0268E5438007E84F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BE7F99F268E5438007E84F3 /* Preview Assets.xcassets */; };
 		3BE7F9AA268E5438007E84F3 /* MothershipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE7F9A9268E5438007E84F3 /* MothershipTests.swift */; };
 		3BE7F9B4268E5438007E84F3 /* MothershipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE7F9B3268E5438007E84F3 /* MothershipUITests.swift */; };
+		3BF78294268FB341005AA27B /* ArchitectureX in Frameworks */ = {isa = PBXBuildFile; productRef = 3BF78293268FB341005AA27B /* ArchitectureX */; };
+		3BF78296268FB4BB005AA27B /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF78295268FB4BB005AA27B /* HomeInteractor.swift */; };
+		3BF78298268FB50C005AA27B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF78297268FB50C005AA27B /* HomeView.swift */; };
+		3BF7829B268FB79A005AA27B /* AppsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF7829A268FB79A005AA27B /* AppsCoordinator.swift */; };
+		3BF7829D268FB7A2005AA27B /* AppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF7829C268FB7A2005AA27B /* AppsView.swift */; };
+		3BF7829F268FB7AC005AA27B /* AppsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF7829E268FB7AC005AA27B /* AppsInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,15 +39,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B7CA300268FAE5400E1B7BB /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		3BDBEC09268FB19500FB04DF /* ArchitectureX */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ArchitectureX; path = ../ArchitectureX; sourceTree = "<group>"; };
 		3BE7F995268E5436007E84F3 /* Mothership.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mothership.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BE7F998268E5436007E84F3 /* MothershipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MothershipApp.swift; sourceTree = "<group>"; };
-		3BE7F99A268E5436007E84F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3BE7F99C268E5438007E84F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BE7F99F268E5438007E84F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3BE7F9A5268E5438007E84F3 /* MothershipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MothershipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BE7F9A9268E5438007E84F3 /* MothershipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MothershipTests.swift; sourceTree = "<group>"; };
 		3BE7F9AF268E5438007E84F3 /* MothershipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MothershipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BE7F9B3268E5438007E84F3 /* MothershipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MothershipUITests.swift; sourceTree = "<group>"; };
+		3BF78295268FB4BB005AA27B /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		3BF78297268FB50C005AA27B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3BF7829A268FB79A005AA27B /* AppsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsCoordinator.swift; sourceTree = "<group>"; };
+		3BF7829C268FB7A2005AA27B /* AppsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsView.swift; sourceTree = "<group>"; };
+		3BF7829E268FB7AC005AA27B /* AppsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BF78294268FB341005AA27B /* ArchitectureX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,13 +82,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B7CA2FF268FAE4200E1B7BB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3B7CA300268FAE5400E1B7BB /* HomeCoordinator.swift */,
+				3BF78295268FB4BB005AA27B /* HomeInteractor.swift */,
+				3BF78297268FB50C005AA27B /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3B7CA302268FAE7800E1B7BB /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				3BDBEC09268FB19500FB04DF /* ArchitectureX */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 		3BE7F98C268E5436007E84F3 = {
 			isa = PBXGroup;
 			children = (
+				3B7CA302268FAE7800E1B7BB /* Packages */,
 				3BE7F997268E5436007E84F3 /* Mothership */,
 				3BE7F9A8268E5438007E84F3 /* MothershipTests */,
 				3BE7F9B2268E5438007E84F3 /* MothershipUITests */,
 				3BE7F996268E5436007E84F3 /* Products */,
+				3BF78292268FB341005AA27B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,7 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				3BE7F998268E5436007E84F3 /* MothershipApp.swift */,
-				3BE7F99A268E5436007E84F3 /* ContentView.swift */,
+				3B7CA2FF268FAE4200E1B7BB /* Home */,
+				3BF78299268FB781005AA27B /* Apps */,
 				3BE7F99C268E5438007E84F3 /* Assets.xcassets */,
 				3BE7F99E268E5438007E84F3 /* Preview Content */,
 			);
@@ -124,6 +158,23 @@
 			path = MothershipUITests;
 			sourceTree = "<group>";
 		};
+		3BF78292268FB341005AA27B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3BF78299268FB781005AA27B /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				3BF7829A268FB79A005AA27B /* AppsCoordinator.swift */,
+				3BF7829C268FB7A2005AA27B /* AppsView.swift */,
+				3BF7829E268FB7AC005AA27B /* AppsInteractor.swift */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,6 +191,9 @@
 			dependencies = (
 			);
 			name = Mothership;
+			packageProductDependencies = (
+				3BF78293268FB341005AA27B /* ArchitectureX */,
+			);
 			productName = Mothership;
 			productReference = 3BE7F995268E5436007E84F3 /* Mothership.app */;
 			productType = "com.apple.product-type.application";
@@ -254,8 +308,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BE7F99B268E5436007E84F3 /* ContentView.swift in Sources */,
+				3BF78296268FB4BB005AA27B /* HomeInteractor.swift in Sources */,
+				3BF78298268FB50C005AA27B /* HomeView.swift in Sources */,
+				3BF7829B268FB79A005AA27B /* AppsCoordinator.swift in Sources */,
 				3BE7F999268E5436007E84F3 /* MothershipApp.swift in Sources */,
+				3BF7829F268FB7AC005AA27B /* AppsInteractor.swift in Sources */,
+				3BF7829D268FB7A2005AA27B /* AppsView.swift in Sources */,
+				3B7CA301268FAE5400E1B7BB /* HomeCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,6 +662,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3BF78293268FB341005AA27B /* ArchitectureX */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ArchitectureX;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3BE7F98D268E5436007E84F3 /* Project object */;
 }

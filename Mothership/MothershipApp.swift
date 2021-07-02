@@ -1,17 +1,14 @@
-//
-//  MothershipApp.swift
-//  Mothership
-//
-//  Created by Martin Kim Dung-Pham on 01.07.21.
-//
-
 import SwiftUI
+import ArchitectureX
 
 @main
 struct MothershipApp: App {
+
+    let coordinator = HomeCoordinator(navigator: Navigator(navigationController: UINavigationController()))
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            coordinator.view
         }
     }
 }
