@@ -3,13 +3,9 @@ import SwiftUI
 import ArchitectureX
 import UIKit
 
-class HomeCoordinator: Coordinator {
+struct HomeCoordinator: Coordinator {
 
     let navigator: Navigator
-
-    init(navigator: Navigator) {
-        self.navigator = navigator
-    }
 
     var view: some View {
         let interactor = HomeInteractor(coordinator: self)
