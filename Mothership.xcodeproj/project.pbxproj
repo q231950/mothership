@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B43FEF626908EA50039C6FC /* ArchitectureX in Frameworks */ = {isa = PBXBuildFile; productRef = 3B43FEF526908EA50039C6FC /* ArchitectureX */; };
 		3B7CA301268FAE5400E1B7BB /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7CA300268FAE5400E1B7BB /* HomeCoordinator.swift */; };
 		3BE7F999268E5436007E84F3 /* MothershipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE7F998268E5436007E84F3 /* MothershipApp.swift */; };
 		3BE7F99D268E5438007E84F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BE7F99C268E5438007E84F3 /* Assets.xcassets */; };
 		3BE7F9A0268E5438007E84F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BE7F99F268E5438007E84F3 /* Preview Assets.xcassets */; };
 		3BE7F9AA268E5438007E84F3 /* MothershipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE7F9A9268E5438007E84F3 /* MothershipTests.swift */; };
 		3BE7F9B4268E5438007E84F3 /* MothershipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE7F9B3268E5438007E84F3 /* MothershipUITests.swift */; };
-		3BF78294268FB341005AA27B /* ArchitectureX in Frameworks */ = {isa = PBXBuildFile; productRef = 3BF78293268FB341005AA27B /* ArchitectureX */; };
 		3BF78296268FB4BB005AA27B /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF78295268FB4BB005AA27B /* HomeInteractor.swift */; };
 		3BF78298268FB50C005AA27B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF78297268FB50C005AA27B /* HomeView.swift */; };
 		3BF7829B268FB79A005AA27B /* AppsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF7829A268FB79A005AA27B /* AppsCoordinator.swift */; };
@@ -40,7 +40,6 @@
 
 /* Begin PBXFileReference section */
 		3B7CA300268FAE5400E1B7BB /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
-		3BDBEC09268FB19500FB04DF /* ArchitectureX */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ArchitectureX; path = ../ArchitectureX; sourceTree = "<group>"; };
 		3BE7F995268E5436007E84F3 /* Mothership.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mothership.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BE7F998268E5436007E84F3 /* MothershipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MothershipApp.swift; sourceTree = "<group>"; };
 		3BE7F99C268E5438007E84F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BF78294268FB341005AA27B /* ArchitectureX in Frameworks */,
+				3B43FEF626908EA50039C6FC /* ArchitectureX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,18 +91,14 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		3B7CA302268FAE7800E1B7BB /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				3BDBEC09268FB19500FB04DF /* ArchitectureX */,
 			);
-			name = Packages;
 			sourceTree = "<group>";
 		};
 		3BE7F98C268E5436007E84F3 = {
 			isa = PBXGroup;
 			children = (
-				3B7CA302268FAE7800E1B7BB /* Packages */,
 				3BE7F997268E5436007E84F3 /* Mothership */,
 				3BE7F9A8268E5438007E84F3 /* MothershipTests */,
 				3BE7F9B2268E5438007E84F3 /* MothershipUITests */,
@@ -192,7 +187,7 @@
 			);
 			name = Mothership;
 			packageProductDependencies = (
-				3BF78293268FB341005AA27B /* ArchitectureX */,
+				3B43FEF526908EA50039C6FC /* ArchitectureX */,
 			);
 			productName = Mothership;
 			productReference = 3BE7F995268E5436007E84F3 /* Mothership.app */;
@@ -266,6 +261,9 @@
 				Base,
 			);
 			mainGroup = 3BE7F98C268E5436007E84F3;
+			packageReferences = (
+				3B43FEF426908EA50039C6FC /* XCRemoteSwiftPackageReference "architecture-x" */,
+			);
 			productRefGroup = 3BE7F996268E5436007E84F3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -663,9 +661,21 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		3B43FEF426908EA50039C6FC /* XCRemoteSwiftPackageReference "architecture-x" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/q231950/architecture-x";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		3BF78293268FB341005AA27B /* ArchitectureX */ = {
+		3B43FEF526908EA50039C6FC /* ArchitectureX */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 3B43FEF426908EA50039C6FC /* XCRemoteSwiftPackageReference "architecture-x" */;
 			productName = ArchitectureX;
 		};
 /* End XCSwiftPackageProductDependency section */
