@@ -9,6 +9,7 @@ struct MothershipApp: App {
     var body: some Scene {
         WindowGroup {
             coordinator.view
+                .ignoresSafeArea()
         }
     }
 }

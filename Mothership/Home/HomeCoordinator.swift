@@ -13,10 +13,10 @@ class HomeCoordinator: Coordinator {
 
     var view: some View {
         let interactor = HomeInteractor(coordinator: self)
-        let hostedCoordinatorView = UIHostingController(rootView: HomeView(interactor: interactor))
+        let homeView = HomeView(viewModel: HomeViewModel(), interactor: interactor)
+        let hostedCoordinatorView = UIHostingController(rootView: homeView)
 
         navigator.navigationController.setViewControllers([hostedCoordinatorView], animated: true)
-        navigator.navigationController.navigationBar.prefersLargeTitles = true
 
         return ViewControllerContainer(viewController: navigator.navigationController)
     }

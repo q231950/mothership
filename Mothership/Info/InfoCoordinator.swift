@@ -1,8 +1,17 @@
-//
-//  InfoCoordinator.swift
-//  Mothership
-//
-//  Created by Martin Kim Dung-Pham on 03.07.21.
-//
+import SwiftUI
+import ArchitectureX
 
-import Foundation
+class InfoCoordinator: Coordinator {
+
+    var navigator: Navigator
+
+    init(navigator: Navigator) {
+        self.navigator = navigator
+    }
+
+    var view: some View {
+        let interactor = InfoInteractor(coordinator: self)
+
+        return InfoView(interactor: interactor)
+    }
+}

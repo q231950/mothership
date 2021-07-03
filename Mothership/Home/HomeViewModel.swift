@@ -1,8 +1,14 @@
-//
-//  HomeViewModel.swift
-//  Mothership
-//
-//  Created by Martin Kim Dung-Pham on 03.07.21.
-//
-
+import Combine
 import Foundation
+
+class HomeViewModel: ObservableObject {
+
+    @Published var title: String = "Mothership"
+
+    init() {
+        Timer.scheduledTimer(withTimeInterval: 2, repeats: true) { timer in
+            self.title = "Mothership \((1..<10).randomElement() ?? 0)"
+        }
+    }
+
+}

@@ -12,7 +12,7 @@ class AppsCoordinator: Coordinator {
     }
 
     var view: some View {
-        AppsView(interactor: AppsInteractor(coordinator: self))
+        AppsView(viewModel: AppsViewModel(), interactor: AppsInteractor(coordinator: self))
     }
 
 

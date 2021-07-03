@@ -3,16 +3,14 @@ import SwiftUI
 import ArchitectureX
 
 struct AppsView: View {
+
+    @ObservedObject var viewModel: AppsViewModel
     let interactor: AppsInteractor
 
     var body: some View {
-        Text("Apps")
+        List(viewModel.apps, id: \.self) {
+            Text($0.bundleIdentifier)
+        }
         .navigationTitle("Apps")
-    }
-}
-
-struct AppsView_Preview: PreviewProvider {
-    static var previews: some View {
-        AppsView(interactor: AppsInteractor(coordinator: AppsCoordinator(navigator: Navigator(navigationController: UINavigationController()))))
     }
 }
