@@ -11,10 +11,10 @@
 		3B43FEF3269047490039C6FC /* InfoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B43FEF2269047490039C6FC /* InfoCoordinator.swift */; };
 		3B43FEF8269091200039C6FC /* InfoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B43FEF7269091200039C6FC /* InfoInteractor.swift */; };
 		3B43FEFA269091270039C6FC /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B43FEF9269091270039C6FC /* InfoView.swift */; };
-		3B57BA0226909260007FA0F3 /* ArchitectureX in Frameworks */ = {isa = PBXBuildFile; productRef = 3B57BA0126909260007FA0F3 /* ArchitectureX */; };
 		3B57BA042690F9B4007FA0F3 /* AppsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B57BA032690F9B4007FA0F3 /* AppsViewModel.swift */; };
 		3B57BA0E2690FD41007FA0F3 /* Services in Frameworks */ = {isa = PBXBuildFile; productRef = 3B57BA0D2690FD41007FA0F3 /* Services */; };
 		3B57BA112690FDA8007FA0F3 /* Models in Frameworks */ = {isa = PBXBuildFile; productRef = 3B57BA102690FDA8007FA0F3 /* Models */; };
+		3B76602A2691B88900FE2AFB /* ArchitectureX in Frameworks */ = {isa = PBXBuildFile; productRef = 3B7660292691B88900FE2AFB /* ArchitectureX */; };
 		3B7CA301268FAE5400E1B7BB /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7CA300268FAE5400E1B7BB /* HomeCoordinator.swift */; };
 		3BE7F999268E5436007E84F3 /* MothershipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE7F998268E5436007E84F3 /* MothershipApp.swift */; };
 		3BE7F99D268E5438007E84F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BE7F99C268E5438007E84F3 /* Assets.xcassets */; };
@@ -50,7 +50,6 @@
 		3B43FEF2269047490039C6FC /* InfoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCoordinator.swift; sourceTree = "<group>"; };
 		3B43FEF7269091200039C6FC /* InfoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoInteractor.swift; sourceTree = "<group>"; };
 		3B43FEF9269091270039C6FC /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
-		3B43FEFD2690920A0039C6FC /* ArchitectureX */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ArchitectureX; path = ../ArchitectureX; sourceTree = "<group>"; };
 		3B57BA032690F9B4007FA0F3 /* AppsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsViewModel.swift; sourceTree = "<group>"; };
 		3B57BA082690FB16007FA0F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3B57BA0C2690FD3A007FA0F3 /* Services */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Services; path = Packages/Services; sourceTree = "<group>"; };
@@ -78,7 +77,7 @@
 			files = (
 				3B57BA112690FDA8007FA0F3 /* Models in Frameworks */,
 				3B57BA0E2690FD41007FA0F3 /* Services in Frameworks */,
-				3B57BA0226909260007FA0F3 /* ArchitectureX in Frameworks */,
+				3B76602A2691B88900FE2AFB /* ArchitectureX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +113,6 @@
 			children = (
 				3B57BA0F2690FDA0007FA0F3 /* Models */,
 				3B57BA0C2690FD3A007FA0F3 /* Services */,
-				3B43FEFD2690920A0039C6FC /* ArchitectureX */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -225,9 +223,9 @@
 			);
 			name = Mothership;
 			packageProductDependencies = (
-				3B57BA0126909260007FA0F3 /* ArchitectureX */,
 				3B57BA0D2690FD41007FA0F3 /* Services */,
 				3B57BA102690FDA8007FA0F3 /* Models */,
+				3B7660292691B88900FE2AFB /* ArchitectureX */,
 			);
 			productName = Mothership;
 			productReference = 3BE7F995268E5436007E84F3 /* Mothership.app */;
@@ -302,6 +300,7 @@
 			);
 			mainGroup = 3BE7F98C268E5436007E84F3;
 			packageReferences = (
+				3B7660282691B88900FE2AFB /* XCRemoteSwiftPackageReference "architecture-x" */,
 			);
 			productRefGroup = 3BE7F996268E5436007E84F3 /* Products */;
 			projectDirPath = "";
@@ -713,11 +712,18 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCSwiftPackageProductDependency section */
-		3B57BA0126909260007FA0F3 /* ArchitectureX */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = ArchitectureX;
+/* Begin XCRemoteSwiftPackageReference section */
+		3B7660282691B88900FE2AFB /* XCRemoteSwiftPackageReference "architecture-x" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/q231950/architecture-x";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
 		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
 		3B57BA0D2690FD41007FA0F3 /* Services */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Services;
@@ -725,6 +731,11 @@
 		3B57BA102690FDA8007FA0F3 /* Models */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Models;
+		};
+		3B7660292691B88900FE2AFB /* ArchitectureX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B7660282691B88900FE2AFB /* XCRemoteSwiftPackageReference "architecture-x" */;
+			productName = ArchitectureX;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

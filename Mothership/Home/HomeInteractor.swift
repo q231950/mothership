@@ -1,5 +1,6 @@
 import ArchitectureX
 import UIKit
+import Services
 
 struct HomeInteractor: Interactor {
     var coordinator: HomeCoordinator
@@ -7,7 +8,7 @@ struct HomeInteractor: Interactor {
     func showApps() {
         let navigator = Navigator(navigationController: UINavigationController(), prefersLargeTitles: false)
 
-        coordinator.transition(.push) { _ in AppsCoordinator(navigator: navigator) }
+        coordinator.transition(.push) { _ in AppsCoordinator(navigator: navigator, repository: RemoteAppRepository()) }
     }
 
     func showInfo() {
