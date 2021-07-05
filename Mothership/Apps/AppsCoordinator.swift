@@ -8,7 +8,7 @@ import Services
 struct AppsCoordinator: Coordinator {
 
     let navigator: Navigator
-    let repository: AppRepository
+    let repository: AppsRepository
 
     var view: some View {
         AppsView(viewModel: AppsViewModel(apps: repository.apps), interactor: AppsInteractor(coordinator: self))

@@ -1,0 +1,15 @@
+//
+//  Config-Debug.xcconfig
+//  Mothership
+//
+//  Created by Martin Kim Dung-Pham on 04.07.21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+PRODUCT_NAME = $(inherited) α
+
+//API_BASE_URL = http:/$()/localhost:8080/api
+API_BASE_URL = https:/$()/neoneon.dev/api
+MANIFEST_DOWNLOAD_URL = https:/$()/neoneon.dev

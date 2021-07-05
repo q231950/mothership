@@ -8,9 +8,21 @@ struct AppsView: View {
     let interactor: AppsInteractor
 
     var body: some View {
-        List(viewModel.apps, id: \.self) {
-            Text($0.bundleIdentifier)
+        List(viewModel.apps) { app in
+            HStack {
+                VStack(alignment: .leading) {
+                    Button {
+                        interactor.showApp(app)
+                    } label: {
+                        Text(app.name)
+                            .font(.headline)
+                            .bold()
+                    }
+                }
+            }
+            .frame(minHeight: 60, alignment: .leading)
         }
+        .listStyle(.insetGrouped)
         .navigationTitle("Apps")
     }
 }

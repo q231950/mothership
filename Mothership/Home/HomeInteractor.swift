@@ -6,9 +6,8 @@ struct HomeInteractor: Interactor {
     var coordinator: HomeCoordinator
 
     func showApps() {
-        let navigator = Navigator(navigationController: UINavigationController(), prefersLargeTitles: false)
-
-        coordinator.transition(.push) { _ in AppsCoordinator(navigator: navigator, repository: RemoteAppRepository()) }
+        let repository = RemoteAppsRepository(baseUrl: Configuration.API.baseURL)
+        coordinator.transition(.push) { AppsCoordinator(navigator: $0, repository: repository) }
     }
 
     func showInfo() {
