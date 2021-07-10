@@ -1,10 +1,14 @@
 import SwiftUI
 import ArchitectureX
 
-struct InfoCoordinator: Coordinator {
+class InfoCoordinator: Coordinator {
 
     var navigator: Navigator
 
+    internal init(navigator: Navigator) {
+        self.navigator = navigator
+    }
+    
     var view: some View {
         let interactor = InfoInteractor(coordinator: self)
 

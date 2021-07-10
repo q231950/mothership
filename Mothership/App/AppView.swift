@@ -7,56 +7,85 @@ struct AppView: View {
     let interactor: AppInteractor
 
     var body: some View {
-        VStack(alignment: .leading) {
+        List {
+            Section {
+                AppCard(app: viewModel.app)
+            }
 
-            AppCard(app: viewModel.app)
+            Section {
+                ForEach(viewModel.uploads) { upload in
+                    BuildView(upload: upload, interactor: interactor)
+                }
+                .onDelete { indexSet in
+                    indexSet.first.map { interactor.delete(viewModel.uploads[$0].uuid) }
+                }
+            }
+        }
+        .listStyle(.insetGrouped)
+        .navigationTitle("Builds")
+    }
 
-            List(viewModel.uploads) { upload in
-                VStack(alignment: .leading) {
+    private struct AppCard: View {
+        let app: Models.App
+
+        var body: some View {
+
+            VStack(alignment: .leading) {
+                Text(app.name)
+                    .font(.title3)
+
+                Text(app.bundleIdentifier)
+                    .font(.body)
+                    .bold()
+            }
+            .frame(minHeight: 100)
+            .cornerRadius(10)
+
+        }
+    }
+
+    private struct BuildView: View {
+        let upload: Upload
+        let interactor: AppInteractor
+
+        var body: some View {
+            VStack(alignment: .leading) {
+                Text(upload.build.title)
+                    .font(.body)
+                    .bold()
+                    .padding(EdgeInsets(top: 10, leading: 0, bottom: 4, trailing: 0))
+
+                HStack {
                     HStack {
-                        VStack(alignment: .leading) {
-                            Text(upload.build.title)
+                        Text(upload.build.tag)
+                            .font(.caption2)
+                            .bold()
 
-                            Text(upload.build.tag)
-                                .font(.caption)
-                        }
+                        Text(" v\(upload.version.major).\(upload.version.minor).\(upload.version.patch)")
+                            .font(.caption2)
+                            .bold()
 
-                        Spacer()
-
-                        Button(action: {
-                            interactor.install(upload.uuid)
-                        }) {
-                            Image(systemName: "arrow.down.circle")
-                        }
+                        Text("(\(upload.build.buildNumber))")
+                            .font(.caption2)
+                            .bold()
                     }
 
                     Spacer()
-                        .frame(width: 2, height: 10, alignment: .leading)
 
-                    Text(upload.build.updatedAt)
-                        .font(.caption)
+                    Button(action: {
+                        interactor.install(upload.uuid)
+                    }) {
+                        Image(systemName: "arrow.down.circle")
+                            .scaleEffect(1.3)
+                    }
                 }
+
+                Spacer()
+                    .frame(width: 2, height: 10, alignment: .leading)
+
+                Text(upload.build.updatedAt)
+                    .font(.caption)
             }
-            .listStyle(.insetGrouped)
         }
-        .navigationTitle("Builds")
-    }
-}
-
-struct AppCard: View {
-    let app: Models.App
-
-    var body: some View {
-
-        VStack(alignment: .leading) {
-            Text(app.name)
-                .font(.headline)
-
-            Text(app.bundleIdentifier)
-                .font(.caption)
-        }
-        .cornerRadius(10)
-        .padding()
-
     }
 }

@@ -8,6 +8,7 @@ public struct Build: Decodable, Identifiable {
     public let uuid: UUID
     public let tag: String
     public let title: String
+    public let buildNumber: Int
     public let createdAt: String
     public let updatedAt: String
 
@@ -15,6 +16,7 @@ public struct Build: Decodable, Identifiable {
         case uuid = "id"
         case tag
         case title
+        case buildNumber
         case createdAt
         case updatedAt
     }

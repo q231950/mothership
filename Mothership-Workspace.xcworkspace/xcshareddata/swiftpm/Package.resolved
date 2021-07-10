@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "architecture-x",
+        "repositoryURL": "https://github.com/q231950/architecture-x",
+        "state": {
+          "branch": "main",
+          "revision": "344f25f84e176acd5ee23fb07322e91ddd4846fd",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
