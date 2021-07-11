@@ -24,6 +24,9 @@ struct AppsView: View {
                     }
                     .frame(minHeight: 60, alignment: .leading)
                 }
+                .onDelete { indexSet in
+                    indexSet.first.map { interactor.deleteApp(viewModel.apps[$0].uuid) }
+                }
             }
         }
         .listStyle(.insetGrouped)

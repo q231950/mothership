@@ -4,6 +4,8 @@ import Models
 
 public protocol AppsRepository {
     var apps: CurrentValueSubject<[App], Error> { get }
+
+    func deleteApp(_ uuid: UUID)
 }
 
 public class RemoteAppsRepository: AppsRepository {
@@ -52,5 +54,29 @@ public class RemoteAppsRepository: AppsRepository {
                 //... whatever
             }
         }.resume()
+    }
+
+    public func deleteApp(_ uuid: UUID) {
+        let url = baseUrl
+            .appendingPathComponent("apps")
+            .appendingPathComponent(uuid.uuidString)
+        var request = URLRequest(url: url)
+        request.httpMethod = "DELETE"
+
+        urlSession.dataTask(with: request, completionHandler: { data, response, error in
+            guard error == nil else {
+                print(String(describing: error?.localizedDescription))
+                return
+            }
+
+            guard let response = response as? HTTPURLResponse,
+                  response.statusCode == 200 else {
+                      print("Status Code different from 200")
+                      return
+                  }
+
+            self.loadApps()
+
+        }).resume()
     }
 }

@@ -19,7 +19,7 @@ class AppCoordinator: Coordinator {
     }
 
     var view: some View {
-        AppView(viewModel: AppViewModel(app: app, uploads: repository.uploads), interactor: AppInteractor(coordinator: self))
+        AppView(viewModel: AppViewModel(app: app, uploads: repository.uploads, versions: repository.versions), interactor: AppInteractor(coordinator: self))
     }
 
 }

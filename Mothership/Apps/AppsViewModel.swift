@@ -13,7 +13,7 @@ class AppsViewModel: ObservableObject {
             .sink { error in
                 print("\(error)")
             } receiveValue: { value in
-                self.apps.append(contentsOf: value)
+                self.apps = value
             }.store(in: &cancelables)
 
     }

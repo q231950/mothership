@@ -13,4 +13,8 @@ struct AppsInteractor: Interactor {
         coordinator.transition(.push) { AppCoordinator(navigator: $0, app: app, repository: repository) }
     }
 
+    func deleteApp(_ uuid: UUID) {
+        coordinator.repository.deleteApp(uuid)
+    }
+
 }
