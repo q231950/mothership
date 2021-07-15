@@ -17,6 +17,9 @@
 		3B7292D52691DF580039B97E /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7292D42691DF540039B97E /* Configuration.swift */; };
 		3B76602A2691B88900FE2AFB /* ArchitectureX in Frameworks */ = {isa = PBXBuildFile; productRef = 3B7660292691B88900FE2AFB /* ArchitectureX */; };
 		3B7CA301268FAE5400E1B7BB /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7CA300268FAE5400E1B7BB /* HomeCoordinator.swift */; };
+		3B8DE3CA26A0B181005DEF2F /* AppSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8DE3C926A0B181005DEF2F /* AppSection.swift */; };
+		3B8DE3CC26A0B241005DEF2F /* VersionsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8DE3CB26A0B241005DEF2F /* VersionsSection.swift */; };
+		3B8DE3CE26A0B311005DEF2F /* UploadsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8DE3CD26A0B311005DEF2F /* UploadsSection.swift */; };
 		3BD0C31A2691F06200E91AD7 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD0C3192691F06200E91AD7 /* AppCoordinator.swift */; };
 		3BD0C31C2691F5A700E91AD7 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD0C31B2691F5A700E91AD7 /* AppViewModel.swift */; };
 		3BD0C31E2691F5B400E91AD7 /* AppInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD0C31D2691F5B400E91AD7 /* AppInteractor.swift */; };
@@ -61,6 +64,9 @@
 		3B57BA0F2690FDA0007FA0F3 /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Models; path = Packages/Models; sourceTree = "<group>"; };
 		3B7292D42691DF540039B97E /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		3B7CA300268FAE5400E1B7BB /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		3B8DE3C926A0B181005DEF2F /* AppSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSection.swift; sourceTree = "<group>"; };
+		3B8DE3CB26A0B241005DEF2F /* VersionsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionsSection.swift; sourceTree = "<group>"; };
+		3B8DE3CD26A0B311005DEF2F /* UploadsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadsSection.swift; sourceTree = "<group>"; };
 		3B9F22922691BC880048A5FA /* Config-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Config-Debug.xcconfig"; sourceTree = "<group>"; };
 		3B9F22932691BD5B0048A5FA /* Config-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Config-Release.xcconfig"; sourceTree = "<group>"; };
 		3BD0C3192691F06200E91AD7 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -140,6 +146,16 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		3B8DE3C826A0B16C005DEF2F /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				3B8DE3C926A0B181005DEF2F /* AppSection.swift */,
+				3B8DE3CB26A0B241005DEF2F /* VersionsSection.swift */,
+				3B8DE3CD26A0B311005DEF2F /* UploadsSection.swift */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
 		3B9F22912691BC650048A5FA /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +172,7 @@
 				3BD0C3192691F06200E91AD7 /* AppCoordinator.swift */,
 				3BD0C31D2691F5B400E91AD7 /* AppInteractor.swift */,
 				3BD0C31F2691F5C000E91AD7 /* AppView.swift */,
+				3B8DE3C826A0B16C005DEF2F /* Sections */,
 				3BD0C31B2691F5A700E91AD7 /* AppViewModel.swift */,
 			);
 			path = App;
@@ -382,13 +399,16 @@
 				3BF78296268FB4BB005AA27B /* HomeInteractor.swift in Sources */,
 				3B43FEFA269091270039C6FC /* InfoView.swift in Sources */,
 				3BF78298268FB50C005AA27B /* HomeView.swift in Sources */,
+				3B8DE3CA26A0B181005DEF2F /* AppSection.swift in Sources */,
 				3B43FEF3269047490039C6FC /* InfoCoordinator.swift in Sources */,
 				3BF7829B268FB79A005AA27B /* AppsCoordinator.swift in Sources */,
 				3BD0C31C2691F5A700E91AD7 /* AppViewModel.swift in Sources */,
 				3B43FEF0269045700039C6FC /* HomeViewModel.swift in Sources */,
 				3BD0C31A2691F06200E91AD7 /* AppCoordinator.swift in Sources */,
 				3BE7F999268E5436007E84F3 /* MothershipApp.swift in Sources */,
+				3B8DE3CC26A0B241005DEF2F /* VersionsSection.swift in Sources */,
 				3B7292D52691DF580039B97E /* Configuration.swift in Sources */,
+				3B8DE3CE26A0B311005DEF2F /* UploadsSection.swift in Sources */,
 				3BD0C31E2691F5B400E91AD7 /* AppInteractor.swift in Sources */,
 				3BF7829F268FB7AC005AA27B /* AppsInteractor.swift in Sources */,
 				3BF7829D268FB7A2005AA27B /* AppsView.swift in Sources */,
@@ -562,7 +582,7 @@
 				INFOPLIST_FILE = Mothership/Info.plist;
 				INFOPLIST_KEY_CFBundleExecutable = Mothership;
 				INFOPLIST_KEY_CFBundleName = Mothership;
-				INFOPLIST_KEY_CFBundleVersion = 7;
+				INFOPLIST_KEY_CFBundleVersion = 8;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -597,7 +617,7 @@
 				INFOPLIST_FILE = Mothership/Info.plist;
 				INFOPLIST_KEY_CFBundleExecutable = Mothership;
 				INFOPLIST_KEY_CFBundleName = Mothership;
-				INFOPLIST_KEY_CFBundleVersion = 7;
+				INFOPLIST_KEY_CFBundleVersion = 8;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
