@@ -11,7 +11,7 @@ struct UploadsSection: View {
     var body: some View {
         Section {
             ForEach(viewModel.uploads) { upload in
-                BuildView(upload: upload, interactor: interactor)
+                UploadView(upload: upload, interactor: interactor)
             }
             .onDelete { indexSet in
                 indexSet.first.map { interactor.delete(viewModel.uploads[$0].uuid) }
@@ -19,7 +19,7 @@ struct UploadsSection: View {
         }
     }
 
-    private struct BuildView: View {
+    private struct UploadView: View {
         let upload: Upload
         let interactor: AppInteractor
 

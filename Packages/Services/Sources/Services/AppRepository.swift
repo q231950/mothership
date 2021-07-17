@@ -25,12 +25,8 @@ public class RemoteAppRepository: AppRepository {
         self.baseUrl = baseUrl
         self.uuid = uuid
 
-        defer {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                self.loadUploads()
-                self.loadVersions()
-            }
-        }
+        self.loadUploads()
+        self.loadVersions()
     }
 
     public func delete(_ uuid: UUID) {

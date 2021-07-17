@@ -4,7 +4,9 @@ import SwiftUI
 import Models
 
 struct VersionsSection: View {
+
     @ObservedObject var viewModel: AppViewModel
+    let interactor: AppInteractor?
 
     var body: some View {
         Section {
@@ -16,7 +18,20 @@ struct VersionsSection: View {
             }
 
             if viewModel.hasMoreVersions {
-                Text("All versions")
+                Button(action: {
+                    interactor?.showVersions(viewModel.versions)
+                }) {
+                    HStack {
+                        Text("All Versions")
+                            .font(.body)
+                            .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
+
+                        Spacer()
+
+                        Image(systemName: "square.stack.3d.down.forward")
+                            .scaleEffect(1.3)
+                    }
+                }
             }
         }
     }

@@ -10,7 +10,7 @@ struct AppView: View {
         List {
             AppSection(viewModel: viewModel)
 
-            VersionsSection(viewModel: viewModel)
+            VersionsSection(viewModel: viewModel, interactor: interactor)
 
             UploadsSection(viewModel: viewModel, interactor: interactor)
         }

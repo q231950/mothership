@@ -20,6 +20,9 @@
 		3B8DE3CA26A0B181005DEF2F /* AppSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8DE3C926A0B181005DEF2F /* AppSection.swift */; };
 		3B8DE3CC26A0B241005DEF2F /* VersionsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8DE3CB26A0B241005DEF2F /* VersionsSection.swift */; };
 		3B8DE3CE26A0B311005DEF2F /* UploadsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8DE3CD26A0B311005DEF2F /* UploadsSection.swift */; };
+		3B8DE3D426A0CAFA005DEF2F /* VersionsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8DE3D026A0CAF9005DEF2F /* VersionsInteractor.swift */; };
+		3B8DE3D526A0CAFA005DEF2F /* VersionsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8DE3D126A0CAFA005DEF2F /* VersionsCoordinator.swift */; };
+		3B8DE3D726A0CAFA005DEF2F /* VersionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8DE3D326A0CAFA005DEF2F /* VersionsView.swift */; };
 		3BD0C31A2691F06200E91AD7 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD0C3192691F06200E91AD7 /* AppCoordinator.swift */; };
 		3BD0C31C2691F5A700E91AD7 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD0C31B2691F5A700E91AD7 /* AppViewModel.swift */; };
 		3BD0C31E2691F5B400E91AD7 /* AppInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD0C31D2691F5B400E91AD7 /* AppInteractor.swift */; };
@@ -67,6 +70,9 @@
 		3B8DE3C926A0B181005DEF2F /* AppSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSection.swift; sourceTree = "<group>"; };
 		3B8DE3CB26A0B241005DEF2F /* VersionsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionsSection.swift; sourceTree = "<group>"; };
 		3B8DE3CD26A0B311005DEF2F /* UploadsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadsSection.swift; sourceTree = "<group>"; };
+		3B8DE3D026A0CAF9005DEF2F /* VersionsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionsInteractor.swift; sourceTree = "<group>"; };
+		3B8DE3D126A0CAFA005DEF2F /* VersionsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionsCoordinator.swift; sourceTree = "<group>"; };
+		3B8DE3D326A0CAFA005DEF2F /* VersionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionsView.swift; sourceTree = "<group>"; };
 		3B9F22922691BC880048A5FA /* Config-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Config-Debug.xcconfig"; sourceTree = "<group>"; };
 		3B9F22932691BD5B0048A5FA /* Config-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Config-Release.xcconfig"; sourceTree = "<group>"; };
 		3BD0C3192691F06200E91AD7 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -156,6 +162,16 @@
 			path = Sections;
 			sourceTree = "<group>";
 		};
+		3B8DE3CF26A0CA56005DEF2F /* Versions */ = {
+			isa = PBXGroup;
+			children = (
+				3B8DE3D126A0CAFA005DEF2F /* VersionsCoordinator.swift */,
+				3B8DE3D026A0CAF9005DEF2F /* VersionsInteractor.swift */,
+				3B8DE3D326A0CAFA005DEF2F /* VersionsView.swift */,
+			);
+			path = Versions;
+			sourceTree = "<group>";
+		};
 		3B9F22912691BC650048A5FA /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,8 +188,8 @@
 				3BD0C3192691F06200E91AD7 /* AppCoordinator.swift */,
 				3BD0C31D2691F5B400E91AD7 /* AppInteractor.swift */,
 				3BD0C31F2691F5C000E91AD7 /* AppView.swift */,
-				3B8DE3C826A0B16C005DEF2F /* Sections */,
 				3BD0C31B2691F5A700E91AD7 /* AppViewModel.swift */,
+				3B8DE3C826A0B16C005DEF2F /* Sections */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -206,6 +222,7 @@
 			children = (
 				3B57BA082690FB16007FA0F3 /* Info.plist */,
 				3BE7F998268E5436007E84F3 /* MothershipApp.swift */,
+				3B8DE3CF26A0CA56005DEF2F /* Versions */,
 				3B7CA2FF268FAE4200E1B7BB /* Home */,
 				3B43FEF12690473B0039C6FC /* Info */,
 				3BF78299268FB781005AA27B /* Apps */,
@@ -402,7 +419,9 @@
 				3B8DE3CA26A0B181005DEF2F /* AppSection.swift in Sources */,
 				3B43FEF3269047490039C6FC /* InfoCoordinator.swift in Sources */,
 				3BF7829B268FB79A005AA27B /* AppsCoordinator.swift in Sources */,
+				3B8DE3D426A0CAFA005DEF2F /* VersionsInteractor.swift in Sources */,
 				3BD0C31C2691F5A700E91AD7 /* AppViewModel.swift in Sources */,
+				3B8DE3D726A0CAFA005DEF2F /* VersionsView.swift in Sources */,
 				3B43FEF0269045700039C6FC /* HomeViewModel.swift in Sources */,
 				3BD0C31A2691F06200E91AD7 /* AppCoordinator.swift in Sources */,
 				3BE7F999268E5436007E84F3 /* MothershipApp.swift in Sources */,
@@ -410,6 +429,7 @@
 				3B7292D52691DF580039B97E /* Configuration.swift in Sources */,
 				3B8DE3CE26A0B311005DEF2F /* UploadsSection.swift in Sources */,
 				3BD0C31E2691F5B400E91AD7 /* AppInteractor.swift in Sources */,
+				3B8DE3D526A0CAFA005DEF2F /* VersionsCoordinator.swift in Sources */,
 				3BF7829F268FB7AC005AA27B /* AppsInteractor.swift in Sources */,
 				3BF7829D268FB7A2005AA27B /* AppsView.swift in Sources */,
 				3BD0C3202691F5C000E91AD7 /* AppView.swift in Sources */,
@@ -582,7 +602,7 @@
 				INFOPLIST_FILE = Mothership/Info.plist;
 				INFOPLIST_KEY_CFBundleExecutable = Mothership;
 				INFOPLIST_KEY_CFBundleName = Mothership;
-				INFOPLIST_KEY_CFBundleVersion = 8;
+				INFOPLIST_KEY_CFBundleVersion = 9;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -617,7 +637,7 @@
 				INFOPLIST_FILE = Mothership/Info.plist;
 				INFOPLIST_KEY_CFBundleExecutable = Mothership;
 				INFOPLIST_KEY_CFBundleName = Mothership;
-				INFOPLIST_KEY_CFBundleVersion = 8;
+				INFOPLIST_KEY_CFBundleVersion = 9;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
