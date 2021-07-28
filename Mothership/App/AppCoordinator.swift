@@ -23,7 +23,7 @@ class AppCoordinator: Coordinator {
                                      uploads: repository.uploads,
                                      versions: repository.versions)
 
-        return AppView(viewModel: viewModel, interactor: AppInteractor(coordinator: self))
+        return AppView(title: app.name, viewModel: viewModel, interactor: AppInteractor(coordinator: self))
     }
 
 }

@@ -17,4 +17,8 @@ struct AppsInteractor: Interactor {
         coordinator.repository.deleteApp(uuid)
     }
 
+    func loadApps() {
+        coordinator.repository.loadApps()
+    }
+
 }

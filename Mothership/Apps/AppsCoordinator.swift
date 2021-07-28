@@ -16,7 +16,7 @@ class AppsCoordinator: Coordinator {
     }
 
     var view: some View {
-        AppsView(viewModel: AppsViewModel(apps: repository.apps), interactor: AppsInteractor(coordinator: self))
+        AppsView(viewModel: AppsViewModel(apps: self.repository.apps), interactor: AppsInteractor(coordinator: self))
     }
 
 }

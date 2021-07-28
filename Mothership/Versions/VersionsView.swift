@@ -5,6 +5,7 @@ struct VersionsView: View {
 
     let versions: [Version]
     let interactor: VersionsInteractor
+    let title = "Versions"
 
     var body: some View {
         List {
@@ -15,6 +16,5 @@ struct VersionsView: View {
             }
         }
         .listStyle(.plain)
-        .navigationTitle("Versions")
     }
 }

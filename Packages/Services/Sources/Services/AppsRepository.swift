@@ -5,6 +5,8 @@ import Models
 public protocol AppsRepository {
     var apps: CurrentValueSubject<[App], Error> { get }
 
+    func loadApps()
+
     func deleteApp(_ uuid: UUID)
 }
 
@@ -18,15 +20,9 @@ public class RemoteAppsRepository: AppsRepository {
 
     public init(baseUrl: URL) {
         self.baseUrl = baseUrl
-
-        defer {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                self.loadApps()
-            }
-        }
     }
 
-    private func loadApps() {
+    public func loadApps() {
         let url = baseUrl.appendingPathComponent("apps")
 
         urlSession.dataTask(with: url) { [weak self] data, response, error in

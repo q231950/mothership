@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B04DC0D26B1E38400D164C4 /* ArchitectureX in Frameworks */ = {isa = PBXBuildFile; productRef = 3B04DC0C26B1E38400D164C4 /* ArchitectureX */; };
 		3B43FEF0269045700039C6FC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B43FEEF269045700039C6FC /* HomeViewModel.swift */; };
 		3B43FEF3269047490039C6FC /* InfoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B43FEF2269047490039C6FC /* InfoCoordinator.swift */; };
 		3B43FEF8269091200039C6FC /* InfoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B43FEF7269091200039C6FC /* InfoInteractor.swift */; };
@@ -15,7 +16,6 @@
 		3B57BA0E2690FD41007FA0F3 /* Services in Frameworks */ = {isa = PBXBuildFile; productRef = 3B57BA0D2690FD41007FA0F3 /* Services */; };
 		3B57BA112690FDA8007FA0F3 /* Models in Frameworks */ = {isa = PBXBuildFile; productRef = 3B57BA102690FDA8007FA0F3 /* Models */; };
 		3B7292D52691DF580039B97E /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7292D42691DF540039B97E /* Configuration.swift */; };
-		3B76602A2691B88900FE2AFB /* ArchitectureX in Frameworks */ = {isa = PBXBuildFile; productRef = 3B7660292691B88900FE2AFB /* ArchitectureX */; };
 		3B7CA301268FAE5400E1B7BB /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7CA300268FAE5400E1B7BB /* HomeCoordinator.swift */; };
 		3B8DE3CA26A0B181005DEF2F /* AppSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8DE3C926A0B181005DEF2F /* AppSection.swift */; };
 		3B8DE3CC26A0B241005DEF2F /* VersionsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8DE3CB26A0B241005DEF2F /* VersionsSection.swift */; };
@@ -101,7 +101,7 @@
 			files = (
 				3B57BA112690FDA8007FA0F3 /* Models in Frameworks */,
 				3B57BA0E2690FD41007FA0F3 /* Services in Frameworks */,
-				3B76602A2691B88900FE2AFB /* ArchitectureX in Frameworks */,
+				3B04DC0D26B1E38400D164C4 /* ArchitectureX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +294,7 @@
 			packageProductDependencies = (
 				3B57BA0D2690FD41007FA0F3 /* Services */,
 				3B57BA102690FDA8007FA0F3 /* Models */,
-				3B7660292691B88900FE2AFB /* ArchitectureX */,
+				3B04DC0C26B1E38400D164C4 /* ArchitectureX */,
 			);
 			productName = Mothership;
 			productReference = 3BE7F995268E5436007E84F3 /* Mothership.app */;
@@ -369,7 +369,7 @@
 			);
 			mainGroup = 3BE7F98C268E5436007E84F3;
 			packageReferences = (
-				3B7660282691B88900FE2AFB /* XCRemoteSwiftPackageReference "architecture-x" */,
+				3B04DC0B26B1E38400D164C4 /* XCRemoteSwiftPackageReference "architecture-x" */,
 			);
 			productRefGroup = 3BE7F996268E5436007E84F3 /* Products */;
 			projectDirPath = "";
@@ -608,7 +608,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -643,7 +643,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -795,7 +795,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3B7660282691B88900FE2AFB /* XCRemoteSwiftPackageReference "architecture-x" */ = {
+		3B04DC0B26B1E38400D164C4 /* XCRemoteSwiftPackageReference "architecture-x" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/q231950/architecture-x";
 			requirement = {
@@ -806,6 +806,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3B04DC0C26B1E38400D164C4 /* ArchitectureX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B04DC0B26B1E38400D164C4 /* XCRemoteSwiftPackageReference "architecture-x" */;
+			productName = ArchitectureX;
+		};
 		3B57BA0D2690FD41007FA0F3 /* Services */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Services;
@@ -813,11 +818,6 @@
 		3B57BA102690FDA8007FA0F3 /* Models */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Models;
-		};
-		3B7660292691B88900FE2AFB /* ArchitectureX */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3B7660282691B88900FE2AFB /* XCRemoteSwiftPackageReference "architecture-x" */;
-			productName = ArchitectureX;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -3,6 +3,7 @@ import Models
 
 struct AppView: View {
 
+    let title: String
     @ObservedObject var viewModel: AppViewModel
     let interactor: AppInteractor
 
@@ -15,6 +16,5 @@ struct AppView: View {
             UploadsSection(viewModel: viewModel, interactor: interactor)
         }
         .listStyle(.insetGrouped)
-        .navigationTitle(viewModel.app.name)
     }
 }
