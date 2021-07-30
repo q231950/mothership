@@ -19,7 +19,8 @@ class AppsViewModel: ObservableObject {
         DispatchQueue.main.async {
             self.state = .loading
         }
-        apps.receive(on: RunLoop.main)
+        apps
+            .debounce(for: 0.6, scheduler: RunLoop.main)
             .sink { [weak self] error in
                 print("\(error)")
                 self?.state = .error

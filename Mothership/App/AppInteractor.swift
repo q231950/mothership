@@ -8,7 +8,7 @@ struct AppInteractor: Interactor {
 
     /// installs an upload's build
     func install(_ uuid: UUID) {
-        guard let url = URL(string: "itms-services://?action=download-manifest&url=\(Configuration.Manifest.downloadURL)/install/\(uuid.uuidString)") else { return }
+        guard let url = URL(string: "itms-services://?action=download-manifest&url=\(Configuration.Manifest.downloadURL)/install/\(uuid.uuidString)/install.plist") else { return }
 
         UIApplication.shared.open(url)
     }

@@ -4,8 +4,6 @@
 <dict>
 	<key>API_BASE_URL</key>
 	<string>$(API_BASE_URL)</string>
-	<key>LSRequiresIPhoneOS</key>
-	<true/>
 	<key>MANIFEST_DOWNLOAD_URL</key>
 	<string>$(MANIFEST_DOWNLOAD_URL)</string>
 </dict>
