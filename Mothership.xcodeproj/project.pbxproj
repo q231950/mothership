@@ -15,6 +15,11 @@
 		3B57BA042690F9B4007FA0F3 /* AppsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B57BA032690F9B4007FA0F3 /* AppsViewModel.swift */; };
 		3B57BA0E2690FD41007FA0F3 /* Services in Frameworks */ = {isa = PBXBuildFile; productRef = 3B57BA0D2690FD41007FA0F3 /* Services */; };
 		3B57BA112690FDA8007FA0F3 /* Models in Frameworks */ = {isa = PBXBuildFile; productRef = 3B57BA102690FDA8007FA0F3 /* Models */; };
+		3B6793FF26B5CA7000C073B3 /* MothershipAppClipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6793FE26B5CA7000C073B3 /* MothershipAppClipApp.swift */; };
+		3B67940126B5CA7000C073B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B67940026B5CA7000C073B3 /* ContentView.swift */; };
+		3B67940326B5CA7300C073B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B67940226B5CA7300C073B3 /* Assets.xcassets */; };
+		3B67940626B5CA7300C073B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B67940526B5CA7300C073B3 /* Preview Assets.xcassets */; };
+		3B67940B26B5CA7300C073B3 /* MothershipAppClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 3B6793FC26B5CA7000C073B3 /* MothershipAppClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3B7292D52691DF580039B97E /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7292D42691DF540039B97E /* Configuration.swift */; };
 		3B7CA301268FAE5400E1B7BB /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7CA300268FAE5400E1B7BB /* HomeCoordinator.swift */; };
 		3B8DE3CA26A0B181005DEF2F /* AppSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8DE3C926A0B181005DEF2F /* AppSection.swift */; };
@@ -40,6 +45,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3B67940926B5CA7300C073B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BE7F98D268E5436007E84F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B6793FB26B5CA7000C073B3;
+			remoteInfo = MothershipAppClip;
+		};
 		3BE7F9A6268E5438007E84F3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3BE7F98D268E5436007E84F3 /* Project object */;
@@ -56,6 +68,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3B67940F26B5CA7300C073B3 /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				3B67940B26B5CA7300C073B3 /* MothershipAppClip.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3B43FEEF269045700039C6FC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		3B43FEF2269047490039C6FC /* InfoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCoordinator.swift; sourceTree = "<group>"; };
@@ -65,6 +91,13 @@
 		3B57BA082690FB16007FA0F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3B57BA0C2690FD3A007FA0F3 /* Services */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Services; path = Packages/Services; sourceTree = "<group>"; };
 		3B57BA0F2690FDA0007FA0F3 /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Models; path = Packages/Models; sourceTree = "<group>"; };
+		3B6793FC26B5CA7000C073B3 /* MothershipAppClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MothershipAppClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B6793FE26B5CA7000C073B3 /* MothershipAppClipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MothershipAppClipApp.swift; sourceTree = "<group>"; };
+		3B67940026B5CA7000C073B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3B67940226B5CA7300C073B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B67940526B5CA7300C073B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3B67940726B5CA7300C073B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B67940826B5CA7300C073B3 /* MothershipAppClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MothershipAppClip.entitlements; sourceTree = "<group>"; };
 		3B7292D42691DF540039B97E /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		3B7CA300268FAE5400E1B7BB /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		3B8DE3C926A0B181005DEF2F /* AppSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSection.swift; sourceTree = "<group>"; };
@@ -95,6 +128,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3B6793F926B5CA7000C073B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3BE7F992268E5436007E84F3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -139,6 +179,27 @@
 				3B57BA0C2690FD3A007FA0F3 /* Services */,
 			);
 			name = Packages;
+			sourceTree = "<group>";
+		};
+		3B6793FD26B5CA7000C073B3 /* MothershipAppClip */ = {
+			isa = PBXGroup;
+			children = (
+				3B6793FE26B5CA7000C073B3 /* MothershipAppClipApp.swift */,
+				3B67940026B5CA7000C073B3 /* ContentView.swift */,
+				3B67940226B5CA7300C073B3 /* Assets.xcassets */,
+				3B67940726B5CA7300C073B3 /* Info.plist */,
+				3B67940826B5CA7300C073B3 /* MothershipAppClip.entitlements */,
+				3B67940426B5CA7300C073B3 /* Preview Content */,
+			);
+			path = MothershipAppClip;
+			sourceTree = "<group>";
+		};
+		3B67940426B5CA7300C073B3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3B67940526B5CA7300C073B3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		3B7CA2FF268FAE4200E1B7BB /* Home */ = {
@@ -202,6 +263,7 @@
 				3BE7F997268E5436007E84F3 /* Mothership */,
 				3BE7F9A8268E5438007E84F3 /* MothershipTests */,
 				3BE7F9B2268E5438007E84F3 /* MothershipUITests */,
+				3B6793FD26B5CA7000C073B3 /* MothershipAppClip */,
 				3BE7F996268E5436007E84F3 /* Products */,
 				3BF78292268FB341005AA27B /* Frameworks */,
 			);
@@ -213,6 +275,7 @@
 				3BE7F995268E5436007E84F3 /* Mothership.app */,
 				3BE7F9A5268E5438007E84F3 /* MothershipTests.xctest */,
 				3BE7F9AF268E5438007E84F3 /* MothershipUITests.xctest */,
+				3B6793FC26B5CA7000C073B3 /* MothershipAppClip.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -278,6 +341,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3B6793FB26B5CA7000C073B3 /* MothershipAppClip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B67940C26B5CA7300C073B3 /* Build configuration list for PBXNativeTarget "MothershipAppClip" */;
+			buildPhases = (
+				3B6793F826B5CA7000C073B3 /* Sources */,
+				3B6793F926B5CA7000C073B3 /* Frameworks */,
+				3B6793FA26B5CA7000C073B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MothershipAppClip;
+			productName = MothershipAppClip;
+			productReference = 3B6793FC26B5CA7000C073B3 /* MothershipAppClip.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
 		3BE7F994268E5436007E84F3 /* Mothership */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BE7F9B7268E5438007E84F3 /* Build configuration list for PBXNativeTarget "Mothership" */;
@@ -285,10 +365,12 @@
 				3BE7F991268E5436007E84F3 /* Sources */,
 				3BE7F992268E5436007E84F3 /* Frameworks */,
 				3BE7F993268E5436007E84F3 /* Resources */,
+				3B67940F26B5CA7300C073B3 /* Embed App Clips */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3B67940A26B5CA7300C073B3 /* PBXTargetDependency */,
 			);
 			name = Mothership;
 			packageProductDependencies = (
@@ -346,6 +428,9 @@
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					3B6793FB26B5CA7000C073B3 = {
+						CreatedOnToolsVersion = 13.0;
+					};
 					3BE7F994268E5436007E84F3 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -378,11 +463,21 @@
 				3BE7F994268E5436007E84F3 /* Mothership */,
 				3BE7F9A4268E5438007E84F3 /* MothershipTests */,
 				3BE7F9AE268E5438007E84F3 /* MothershipUITests */,
+				3B6793FB26B5CA7000C073B3 /* MothershipAppClip */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3B6793FA26B5CA7000C073B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B67940626B5CA7300C073B3 /* Preview Assets.xcassets in Resources */,
+				3B67940326B5CA7300C073B3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3BE7F993268E5436007E84F3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -409,6 +504,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3B6793F826B5CA7000C073B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B67940126B5CA7000C073B3 /* ContentView.swift in Sources */,
+				3B6793FF26B5CA7000C073B3 /* MothershipAppClipApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3BE7F991268E5436007E84F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -458,6 +562,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3B67940A26B5CA7300C073B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B6793FB26B5CA7000C073B3 /* MothershipAppClip */;
+			targetProxy = 3B67940926B5CA7300C073B3 /* PBXContainerItemProxy */;
+		};
 		3BE7F9A7268E5438007E84F3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3BE7F994268E5436007E84F3 /* Mothership */;
@@ -471,6 +580,74 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		3B67940D26B5CA7300C073B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_ENTITLEMENTS = MothershipAppClip/MothershipAppClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MothershipAppClip/Preview Content\"";
+				DEVELOPMENT_TEAM = X29V4JPQ55;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MothershipAppClip/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Mothership;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.neoneon.mothership.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B67940E26B5CA7300C073B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_ENTITLEMENTS = MothershipAppClip/MothershipAppClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MothershipAppClip/Preview Content\"";
+				DEVELOPMENT_TEAM = X29V4JPQ55;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MothershipAppClip/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Mothership;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.neoneon.mothership.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		3BE7F9B5268E5438007E84F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -591,10 +768,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B9F22922691BC880048A5FA /* Config-Debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"Mothership/Preview Content\"";
 				DEVELOPMENT_TEAM = X29V4JPQ55;
 				ENABLE_PREVIEWS = YES;
@@ -626,10 +804,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B9F22932691BD5B0048A5FA /* Config-Release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"Mothership/Preview Content\"";
 				DEVELOPMENT_TEAM = X29V4JPQ55;
 				ENABLE_PREVIEWS = YES;
@@ -756,6 +935,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3B67940C26B5CA7300C073B3 /* Build configuration list for PBXNativeTarget "MothershipAppClip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B67940D26B5CA7300C073B3 /* Debug */,
+				3B67940E26B5CA7300C073B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3BE7F990268E5436007E84F3 /* Build configuration list for PBXProject "Mothership" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
