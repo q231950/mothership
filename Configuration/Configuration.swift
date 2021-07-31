@@ -30,13 +30,13 @@ extension Configuration {
 
     enum API {
         static var baseURL: URL {
-            return try! URL(string: Configuration.value(for: "API_BASE_URL"))!
+            try! URL(string: Configuration.value(for: "API_BASE_URL"))!
         }
     }
 
     enum Manifest {
         static var downloadURL: URL {
-            return try! URL(string: Configuration.value(for: "MANIFEST_DOWNLOAD_URL"))!
+            try! URL(string: Configuration.value(for: "MANIFEST_DOWNLOAD_URL"))!
         }
     }
 

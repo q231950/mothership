@@ -21,4 +21,8 @@ struct AppsInteractor: Interactor {
         coordinator.repository.loadApps()
     }
 
+    func dismiss() {
+        coordinator.dismiss()
+    }
+
 }

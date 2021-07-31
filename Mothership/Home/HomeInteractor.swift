@@ -7,7 +7,7 @@ struct HomeInteractor: Interactor {
 
     func showApps() {
         let repository = RemoteAppsRepository(baseUrl: Configuration.API.baseURL)
-        coordinator.transition(.push) {
+        coordinator.transition(.present(modalInPresentation: false)) {
             AppsCoordinator(navigator: $0, repository: repository)
         }
     }

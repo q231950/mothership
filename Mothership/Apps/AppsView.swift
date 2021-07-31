@@ -8,21 +8,29 @@ struct AppsView: View {
     @ObservedObject var viewModel: AppsViewModel
     let interactor: AppsInteractor
 
-    let title = "Apps"
     let displayMode: NavigationBarItem.TitleDisplayMode = .large
 
     var body: some View {
-        switch viewModel.state {
-        case .initial, .loading:
-            Text("Loading…")
-                .onAppear {
-                    interactor.loadApps()
-                }
-        case .done(let apps):
-            list(apps)
-        case .error:
-            Text("⚠️")
+        Group {
+            switch viewModel.state {
+            case .initial, .loading:
+                Text("Loading…")
+                    .onAppear {
+                        interactor.loadApps()
+                    }
+            case .done(let apps):
+                list(apps)
+            case .error:
+                Text("⚠️")
+            }
         }
+        .navigationTitle("Apps")
+        .navigationBarItems(trailing:
+                                Button(action: {
+            interactor.dismiss()
+        }) {
+            Image(systemName: "xmark")
+        })
     }
 
     @ViewBuilder func list(_ apps: [Models.App]) -> some View {
