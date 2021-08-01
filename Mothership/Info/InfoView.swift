@@ -29,6 +29,7 @@ struct InfoView: View {
             interactor.dismiss()
         }) {
             Image(systemName: "xmark")
+                .scaleEffect(1.3)
         })
     }
 }

@@ -21,6 +21,7 @@ struct HomeView: View {
             interactor?.showInfo()
         }, label: {
             Image(systemName: "info.circle.fill")
+                .scaleEffect(1.3)
         }))
     }
 }

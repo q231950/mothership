@@ -30,6 +30,7 @@ struct AppsView: View {
             interactor.dismiss()
         }) {
             Image(systemName: "xmark")
+                .scaleEffect(1.3)
         })
     }
 
@@ -55,6 +56,5 @@ struct AppsView: View {
                 }
             }
         }
-        .listStyle(.insetGrouped)
     }
 }

@@ -15,6 +15,5 @@ struct AppView: View {
 
             UploadsSection(viewModel: viewModel, interactor: interactor)
         }
-        .listStyle(.insetGrouped)
     }
 }

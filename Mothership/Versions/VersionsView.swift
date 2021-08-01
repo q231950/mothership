@@ -15,6 +15,5 @@ struct VersionsView: View {
                     .bold()
             }
         }
-        .listStyle(.plain)
     }
 }
