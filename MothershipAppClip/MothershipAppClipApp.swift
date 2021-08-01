@@ -2,7 +2,7 @@
 //  MothershipAppClipApp.swift
 //  MothershipAppClip
 //
-//  Created by Martin Kim Dung-Pham on 31.07.21.
+//  Created by Martin Kim Dung-Pham on 01.08.21.
 //
 
 import SwiftUI

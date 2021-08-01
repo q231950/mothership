@@ -10,6 +10,10 @@
 		3B0FE91E26B5E7AD00BC0F60 /* Models in Frameworks */ = {isa = PBXBuildFile; productRef = 3B0FE91D26B5E7AD00BC0F60 /* Models */; };
 		3B0FE92026B5E7B300BC0F60 /* Services in Frameworks */ = {isa = PBXBuildFile; productRef = 3B0FE91F26B5E7B300BC0F60 /* Services */; };
 		3B0FE92426B6C32500BC0F60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF7D3D626B5E22F00FFC898 /* Assets.xcassets */; };
+		3B0FE94426B70FF800BC0F60 /* MothershipAppClipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0FE94326B70FF800BC0F60 /* MothershipAppClipApp.swift */; };
+		3B0FE94626B70FF900BC0F60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0FE94526B70FF900BC0F60 /* ContentView.swift */; };
+		3B0FE94826B70FF900BC0F60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B0FE94726B70FF900BC0F60 /* Assets.xcassets */; };
+		3B0FE95026B70FF900BC0F60 /* MothershipAppClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 3B0FE94126B70FF800BC0F60 /* MothershipAppClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3B9843FF26B5E4E1006CD3A9 /* ArchitectureX in Frameworks */ = {isa = PBXBuildFile; productRef = 3B9843FE26B5E4E1006CD3A9 /* ArchitectureX */; };
 		3B98441826B5E505006CD3A9 /* InfoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B98440126B5E505006CD3A9 /* InfoInteractor.swift */; };
 		3B98441926B5E505006CD3A9 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B98440226B5E505006CD3A9 /* InfoView.swift */; };
@@ -37,19 +41,14 @@
 		3B98443826B5E531006CD3A9 /* VersionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B98443526B5E531006CD3A9 /* VersionsView.swift */; };
 		3BF7D3D326B5E22C00FFC898 /* MothershipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF7D3D226B5E22C00FFC898 /* MothershipApp.swift */; };
 		3BF7D3DA26B5E22F00FFC898 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF7D3D926B5E22F00FFC898 /* Preview Assets.xcassets */; };
-		3BF7D3E826B5E25000FFC898 /* MothershipAppClipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF7D3E726B5E25000FFC898 /* MothershipAppClipApp.swift */; };
-		3BF7D3EA26B5E25000FFC898 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF7D3E926B5E25000FFC898 /* ContentView.swift */; };
-		3BF7D3EC26B5E25200FFC898 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF7D3EB26B5E25200FFC898 /* Assets.xcassets */; };
-		3BF7D3EF26B5E25200FFC898 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF7D3EE26B5E25200FFC898 /* Preview Assets.xcassets */; };
-		3BF7D3F426B5E25200FFC898 /* MothershipAppClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 3BF7D3E526B5E25000FFC898 /* MothershipAppClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3BF7D3F226B5E25200FFC898 /* PBXContainerItemProxy */ = {
+		3B0FE94E26B70FF900BC0F60 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3BF7D3C726B5E22C00FFC898 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3BF7D3E426B5E25000FFC898;
+			remoteGlobalIDString = 3B0FE94026B70FF800BC0F60;
 			remoteInfo = MothershipAppClip;
 		};
 /* End PBXContainerItemProxy section */
@@ -61,7 +60,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
 			dstSubfolderSpec = 16;
 			files = (
-				3BF7D3F426B5E25200FFC898 /* MothershipAppClip.app in Embed App Clips */,
+				3B0FE95026B70FF900BC0F60 /* MothershipAppClip.app in Embed App Clips */,
 			);
 			name = "Embed App Clips";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,6 +69,12 @@
 
 /* Begin PBXFileReference section */
 		3B0FE92526B6CAC900BC0F60 /* Mothership.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mothership.entitlements; sourceTree = "<group>"; };
+		3B0FE94126B70FF800BC0F60 /* MothershipAppClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MothershipAppClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B0FE94326B70FF800BC0F60 /* MothershipAppClipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MothershipAppClipApp.swift; sourceTree = "<group>"; };
+		3B0FE94526B70FF900BC0F60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3B0FE94726B70FF900BC0F60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B0FE94C26B70FF900BC0F60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B0FE94D26B70FF900BC0F60 /* MothershipAppClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MothershipAppClip.entitlements; sourceTree = "<group>"; };
 		3B98440126B5E505006CD3A9 /* InfoInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoInteractor.swift; sourceTree = "<group>"; };
 		3B98440226B5E505006CD3A9 /* InfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		3B98440326B5E505006CD3A9 /* InfoCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoCoordinator.swift; sourceTree = "<group>"; };
@@ -101,16 +106,16 @@
 		3BF7D3D626B5E22F00FFC898 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BF7D3D926B5E22F00FFC898 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3BF7D3DB26B5E22F00FFC898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3BF7D3E526B5E25000FFC898 /* MothershipAppClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MothershipAppClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BF7D3E726B5E25000FFC898 /* MothershipAppClipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MothershipAppClipApp.swift; sourceTree = "<group>"; };
-		3BF7D3E926B5E25000FFC898 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		3BF7D3EB26B5E25200FFC898 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3BF7D3EE26B5E25200FFC898 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3BF7D3F026B5E25200FFC898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3BF7D3F126B5E25200FFC898 /* MothershipAppClip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MothershipAppClip.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3B0FE93E26B70FF800BC0F60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3BF7D3CC26B5E22C00FFC898 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -121,16 +126,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3BF7D3E226B5E25000FFC898 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B0FE94226B70FF800BC0F60 /* MothershipAppClip */ = {
+			isa = PBXGroup;
+			children = (
+				3B0FE94326B70FF800BC0F60 /* MothershipAppClipApp.swift */,
+				3B0FE94526B70FF900BC0F60 /* ContentView.swift */,
+				3B0FE94726B70FF900BC0F60 /* Assets.xcassets */,
+				3B0FE94C26B70FF900BC0F60 /* Info.plist */,
+				3B0FE94D26B70FF900BC0F60 /* MothershipAppClip.entitlements */,
+			);
+			path = MothershipAppClip;
+			sourceTree = "<group>";
+		};
 		3B98440026B5E505006CD3A9 /* Info */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,7 +236,7 @@
 			children = (
 				3B9844CF26B5E5A6006CD3A9 /* Packages */,
 				3BF7D3D126B5E22C00FFC898 /* Mothership */,
-				3BF7D3E626B5E25000FFC898 /* MothershipAppClip */,
+				3B0FE94226B70FF800BC0F60 /* MothershipAppClip */,
 				3BF7D3D026B5E22C00FFC898 /* Products */,
 				3B9844D226B5E5CC006CD3A9 /* Frameworks */,
 			);
@@ -236,7 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				3BF7D3CF26B5E22C00FFC898 /* Mothership.app */,
-				3BF7D3E526B5E25000FFC898 /* MothershipAppClip.app */,
+				3B0FE94126B70FF800BC0F60 /* MothershipAppClip.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -267,30 +277,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		3BF7D3E626B5E25000FFC898 /* MothershipAppClip */ = {
-			isa = PBXGroup;
-			children = (
-				3BF7D3E726B5E25000FFC898 /* MothershipAppClipApp.swift */,
-				3BF7D3E926B5E25000FFC898 /* ContentView.swift */,
-				3BF7D3EB26B5E25200FFC898 /* Assets.xcassets */,
-				3BF7D3F026B5E25200FFC898 /* Info.plist */,
-				3BF7D3F126B5E25200FFC898 /* MothershipAppClip.entitlements */,
-				3BF7D3ED26B5E25200FFC898 /* Preview Content */,
-			);
-			path = MothershipAppClip;
-			sourceTree = "<group>";
-		};
-		3BF7D3ED26B5E25200FFC898 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				3BF7D3EE26B5E25200FFC898 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3B0FE94026B70FF800BC0F60 /* MothershipAppClip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B0FE95126B70FF900BC0F60 /* Build configuration list for PBXNativeTarget "MothershipAppClip" */;
+			buildPhases = (
+				3B0FE93D26B70FF800BC0F60 /* Sources */,
+				3B0FE93E26B70FF800BC0F60 /* Frameworks */,
+				3B0FE93F26B70FF800BC0F60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MothershipAppClip;
+			productName = MothershipAppClip;
+			productReference = 3B0FE94126B70FF800BC0F60 /* MothershipAppClip.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
 		3BF7D3CE26B5E22C00FFC898 /* Mothership */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BF7D3DE26B5E22F00FFC898 /* Build configuration list for PBXNativeTarget "Mothership" */;
@@ -303,7 +309,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				3BF7D3F326B5E25200FFC898 /* PBXTargetDependency */,
+				3B0FE94F26B70FF900BC0F60 /* PBXTargetDependency */,
 			);
 			name = Mothership;
 			packageProductDependencies = (
@@ -315,23 +321,6 @@
 			productReference = 3BF7D3CF26B5E22C00FFC898 /* Mothership.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3BF7D3E426B5E25000FFC898 /* MothershipAppClip */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3BF7D3F526B5E25200FFC898 /* Build configuration list for PBXNativeTarget "MothershipAppClip" */;
-			buildPhases = (
-				3BF7D3E126B5E25000FFC898 /* Sources */,
-				3BF7D3E226B5E25000FFC898 /* Frameworks */,
-				3BF7D3E326B5E25000FFC898 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MothershipAppClip;
-			productName = MothershipAppClip;
-			productReference = 3BF7D3E526B5E25000FFC898 /* MothershipAppClip.app */;
-			productType = "com.apple.product-type.application.on-demand-install-capable";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -341,10 +330,10 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					3BF7D3CE26B5E22C00FFC898 = {
+					3B0FE94026B70FF800BC0F60 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
-					3BF7D3E426B5E25000FFC898 = {
+					3BF7D3CE26B5E22C00FFC898 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
 				};
@@ -366,12 +355,20 @@
 			projectRoot = "";
 			targets = (
 				3BF7D3CE26B5E22C00FFC898 /* Mothership */,
-				3BF7D3E426B5E25000FFC898 /* MothershipAppClip */,
+				3B0FE94026B70FF800BC0F60 /* MothershipAppClip */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3B0FE93F26B70FF800BC0F60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B0FE94826B70FF900BC0F60 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3BF7D3CD26B5E22C00FFC898 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -383,18 +380,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3BF7D3E326B5E25000FFC898 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3BF7D3EF26B5E25200FFC898 /* Preview Assets.xcassets in Resources */,
-				3BF7D3EC26B5E25200FFC898 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3B0FE93D26B70FF800BC0F60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B0FE94626B70FF900BC0F60 /* ContentView.swift in Sources */,
+				3B0FE94426B70FF800BC0F60 /* MothershipAppClipApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3BF7D3CB26B5E22C00FFC898 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -425,26 +422,67 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3BF7D3E126B5E25000FFC898 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3BF7D3EA26B5E25000FFC898 /* ContentView.swift in Sources */,
-				3BF7D3E826B5E25000FFC898 /* MothershipAppClipApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3BF7D3F326B5E25200FFC898 /* PBXTargetDependency */ = {
+		3B0FE94F26B70FF900BC0F60 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3BF7D3E426B5E25000FFC898 /* MothershipAppClip */;
-			targetProxy = 3BF7D3F226B5E25200FFC898 /* PBXContainerItemProxy */;
+			target = 3B0FE94026B70FF800BC0F60 /* MothershipAppClip */;
+			targetProxy = 3B0FE94E26B70FF900BC0F60 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		3B0FE95226B70FF900BC0F60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MothershipAppClip/MothershipAppClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 11;
+				DEVELOPMENT_ASSET_PATHS = "\"MothershipAppClip/Preview Content\"";
+				DEVELOPMENT_TEAM = X29V4JPQ55;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MothershipAppClip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.neoneon.mothership.clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B0FE95326B70FF900BC0F60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MothershipAppClip/MothershipAppClip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 11;
+				DEVELOPMENT_ASSET_PATHS = "\"MothershipAppClip/Preview Content\"";
+				DEVELOPMENT_TEAM = X29V4JPQ55;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MothershipAppClip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.neoneon.mothership.clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		3BF7D3DC26B5E22F00FFC898 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -569,8 +607,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Mothership/Mothership.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_ASSET_PATHS = "\"Mothership/Preview Content\"";
 				DEVELOPMENT_TEAM = X29V4JPQ55;
 				ENABLE_PREVIEWS = YES;
@@ -583,6 +622,7 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.neoneon.mothership;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -596,8 +636,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Mothership/Mothership.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_ASSET_PATHS = "\"Mothership/Preview Content\"";
 				DEVELOPMENT_TEAM = X29V4JPQ55;
 				ENABLE_PREVIEWS = YES;
@@ -610,56 +651,7 @@
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.neoneon.mothership;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		3BF7D3F626B5E25200FFC898 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = MothershipAppClip/MothershipAppClip.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
-				DEVELOPMENT_ASSET_PATHS = "\"MothershipAppClip/Preview Content\"";
-				DEVELOPMENT_TEAM = X29V4JPQ55;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = MothershipAppClip/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.neoneon.mothership.clip;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		3BF7D3F726B5E25200FFC898 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = MothershipAppClip/MothershipAppClip.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
-				DEVELOPMENT_ASSET_PATHS = "\"MothershipAppClip/Preview Content\"";
-				DEVELOPMENT_TEAM = X29V4JPQ55;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = MothershipAppClip/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.neoneon.mothership.clip;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -668,6 +660,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3B0FE95126B70FF900BC0F60 /* Build configuration list for PBXNativeTarget "MothershipAppClip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B0FE95226B70FF900BC0F60 /* Debug */,
+				3B0FE95326B70FF900BC0F60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3BF7D3CA26B5E22C00FFC898 /* Build configuration list for PBXProject "Mothership" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -682,15 +683,6 @@
 			buildConfigurations = (
 				3BF7D3DF26B5E22F00FFC898 /* Debug */,
 				3BF7D3E026B5E22F00FFC898 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3BF7D3F526B5E25200FFC898 /* Build configuration list for PBXNativeTarget "MothershipAppClip" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3BF7D3F626B5E25200FFC898 /* Debug */,
-				3BF7D3F726B5E25200FFC898 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

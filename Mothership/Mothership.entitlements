@@ -6,5 +6,9 @@
 	<array>
 		<string>appclips:neoneon.dev</string>
 	</array>
+	<key>com.apple.developer.associated-appclip-app-identifiers</key>
+	<array>
+		<string>X29V4JPQ55.dev.neoneon.mothership.clip</string>
+	</array>
 </dict>
 </plist>
