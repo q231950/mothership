@@ -5,15 +5,14 @@ struct AppView: View {
 
     let title: String
     @ObservedObject var viewModel: AppViewModel
-    let interactor: AppInteractor
 
     var body: some View {
         List {
             AppSection(viewModel: viewModel)
 
-            VersionsSection(viewModel: viewModel, interactor: interactor)
+            VersionsSection(viewModel: viewModel)
 
-            UploadsSection(viewModel: viewModel, interactor: interactor)
+            UploadsSection(viewModel: viewModel)
         }
     }
 }

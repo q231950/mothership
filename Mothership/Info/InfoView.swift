@@ -2,7 +2,7 @@ import SwiftUI
 
 struct InfoView: View {
 
-    var interactor: InfoInteractor
+    var viewModel: InfoViewModel
 
     var body: some View {
         VStack {
@@ -11,13 +11,13 @@ struct InfoView: View {
             Spacer()
 
             Button {
-                interactor.installNewestMothershipApp()
+                viewModel.installNewestMothershipApp()
             } label: {
                 HStack {
                     Text("Latest Stable Mothership")
 
                     Image(systemName: "arrow.down.circle")
-                        .scaleEffect(1.3)
+                        .scaleEffect(1.1)
                 }
             }
 
@@ -26,10 +26,10 @@ struct InfoView: View {
         .navigationTitle("Info")
         .navigationBarItems(trailing:
                                 Button(action: {
-            interactor.dismiss()
+            viewModel.dismiss()
         }) {
             Image(systemName: "xmark")
-                .scaleEffect(1.3)
+                .scaleEffect(1.1)
         })
     }
 }

@@ -1,8 +1,8 @@
-import ArchitectureX
+import Architecture
 import Services
 import UIKit
 
-struct InfoInteractor: Interactor {
+struct InfoViewModel {
 
     var coordinator: InfoCoordinator
 

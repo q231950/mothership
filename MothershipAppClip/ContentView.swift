@@ -14,7 +14,7 @@ struct ContentView: View {
                         Text("Download")
 
                         Image(systemName: "arrow.down.circle")
-                            .scaleEffect(1.3)
+                            .scaleEffect(1.1)
                     }
                 }
             }

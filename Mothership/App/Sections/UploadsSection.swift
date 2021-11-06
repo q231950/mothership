@@ -6,22 +6,21 @@ import Models
 struct UploadsSection: View {
 
     @ObservedObject var viewModel: AppViewModel
-    let interactor: AppInteractor
 
     var body: some View {
         Section {
             ForEach(viewModel.uploads) { upload in
-                UploadView(upload: upload, interactor: interactor)
+                UploadView(upload: upload, viewModel: viewModel)
             }
             .onDelete { indexSet in
-                indexSet.first.map { interactor.delete(viewModel.uploads[$0].uuid) }
+                indexSet.first.map { viewModel.delete(viewModel.uploads[$0].uuid) }
             }
         }
     }
 
     private struct UploadView: View {
         let upload: Upload
-        let interactor: AppInteractor
+        let viewModel: AppViewModel
 
         var body: some View {
             VStack(alignment: .leading) {
@@ -48,10 +47,10 @@ struct UploadsSection: View {
                     Spacer()
 
                     Button(action: {
-                        interactor.install(upload.uuid)
+                        viewModel.install(upload.uuid)
                     }) {
                         Image(systemName: "arrow.down.circle")
-                            .scaleEffect(1.3)
+                            .scaleEffect(1.1)
                     }
                 }
 

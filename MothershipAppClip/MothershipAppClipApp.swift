@@ -12,6 +12,9 @@ struct MothershipAppClipApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onContinueUserActivity(NSUserActivityTypeBrowsingWeb) { activity in
+//                    print("\(activity.webpageURL)")
+                }
         }
     }
 }

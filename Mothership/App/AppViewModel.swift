@@ -1,7 +1,9 @@
-import Foundation
 import Combine
+import Foundation
+import UIKit
 
 import Models
+import Services
 
 class AppViewModel: ObservableObject {
 
@@ -13,8 +15,10 @@ class AppViewModel: ObservableObject {
 
     private let maxSampleCount = 2
     private var cancellables = Set<AnyCancellable>()
+    private var coordinator: AppCoordinator
 
-    init(app: App, uploads: CurrentValueSubject<[Upload], Error>, versions: CurrentValueSubject<[Version], Error>) {
+    init(coordinator: AppCoordinator, app: App, uploads: CurrentValueSubject<[Upload], Error>, versions: CurrentValueSubject<[Version], Error>) {
+        self.coordinator = coordinator
         self.app = app
 
         uploads.receive(on: RunLoop.main)
@@ -42,4 +46,23 @@ class AppViewModel: ObservableObject {
         formatter.dateStyle = .short
         return formatter
     }()
+
+    /// installs an upload's build
+    func install(_ uuid: UUID) {
+        let installer = Installer(baseUrl: Configuration.Manifest.downloadURL)
+        if let url = installer.installUrl(for: uuid) {
+            UIApplication.shared.open(url)
+        }
+    }
+
+    /// deletes an upload
+    func delete(_ uuid: UUID) {
+        coordinator.repository.delete(uuid)
+    }
+
+    func showVersions(_ versions: [Version]) {
+//        coordinator.transition(.push) {
+//            VersionsCoordinator(navigator: navigator, versions: versions)
+//        }
+    }
 }

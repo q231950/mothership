@@ -1,7 +1,8 @@
-import Foundation
-import ArchitectureX
-import UIKit
-
-struct VersionsInteractor: Interactor {
-    let coordinator: VersionsCoordinator
-}
+//import Foundation
+//import Architecture
+//import UIKit
+//
+//struct VersionsInteractor: Interactor {
+//    let coordinator: VersionsCoordinator
+//}
+//

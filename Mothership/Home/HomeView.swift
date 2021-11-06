@@ -8,20 +8,19 @@ struct HomeView: View {
     }
 
     @ObservedObject var viewModel: HomeViewModel
-    var interactor: HomeInteractor?
 
     var body: some View {
         List([Content.apps], id: \.self) { presentationStyle in
             Button("apps") {
-                interactor?.showApps()
+                viewModel.showApps()
             }
         }
         .navigationTitle(viewModel.title)
         .navigationBarItems(trailing: Button(action: {
-            interactor?.showInfo()
+            viewModel.showInfo()
         }, label: {
             Image(systemName: "info.circle.fill")
-                .scaleEffect(1.3)
+                .scaleEffect(1.1)
         }))
     }
 }

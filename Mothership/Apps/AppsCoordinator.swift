@@ -2,21 +2,19 @@ import Foundation
 import SwiftUI
 import UIKit
 
-import ArchitectureX
+import Architecture
 import Services
 
 class AppsCoordinator: Coordinator {
 
-    let navigator: Navigator
     let repository: AppsRepository
+    var router: Router?
 
-    internal init(navigator: Navigator, repository: AppsRepository) {
-        self.navigator = navigator
+    internal init(repository: AppsRepository) {
         self.repository = repository
     }
 
-    var view: some View {
-        AppsView(viewModel: AppsViewModel(apps: self.repository.apps), interactor: AppsInteractor(coordinator: self))
+    var contentView: some View {
+        AppsView(viewModel: AppsViewModel(coordinator: self, apps: repository.apps))
     }
-
 }

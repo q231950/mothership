@@ -6,7 +6,6 @@ import Models
 struct VersionsSection: View {
 
     @ObservedObject var viewModel: AppViewModel
-    let interactor: AppInteractor?
 
     var body: some View {
         Section {
@@ -19,7 +18,7 @@ struct VersionsSection: View {
 
             if viewModel.hasMoreVersions {
                 Button(action: {
-                    interactor?.showVersions(viewModel.versions)
+                    viewModel.showVersions(viewModel.versions)
                 }) {
                     HStack {
                         Text("All Versions")
@@ -29,7 +28,7 @@ struct VersionsSection: View {
                         Spacer()
 
                         Image(systemName: "square.stack.3d.down.forward")
-                            .scaleEffect(1.3)
+                            .scaleEffect(1.1)
                     }
                 }
             }

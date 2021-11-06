@@ -1,12 +1,11 @@
 import Foundation
 import SwiftUI
-import ArchitectureX
+import Architecture
 import Models
 
 struct AppsView: View {
 
     @ObservedObject var viewModel: AppsViewModel
-    let interactor: AppsInteractor
 
     let displayMode: NavigationBarItem.TitleDisplayMode = .large
 
@@ -16,7 +15,7 @@ struct AppsView: View {
             case .initial, .loading:
                 Text("Loading…")
                     .onAppear {
-                        interactor.loadApps()
+                        viewModel.loadApps()
                     }
             case .done(let apps):
                 list(apps)
@@ -27,10 +26,10 @@ struct AppsView: View {
         .navigationTitle("Apps")
         .navigationBarItems(trailing:
                                 Button(action: {
-            interactor.dismiss()
+            viewModel.dismiss()
         }) {
             Image(systemName: "xmark")
-                .scaleEffect(1.3)
+                .scaleEffect(1.1)
         })
     }
 
@@ -41,7 +40,7 @@ struct AppsView: View {
                     HStack {
                         VStack(alignment: .leading) {
                             Button {
-                                interactor.showApp(app)
+                                viewModel.showApp(app)
                             } label: {
                                 Text(app.name)
                                     .font(.headline)
@@ -52,7 +51,7 @@ struct AppsView: View {
                     .frame(minHeight: 60, alignment: .leading)
                 }
                 .onDelete { indexSet in
-                    indexSet.first.map { interactor.deleteApp(apps[$0].uuid) }
+                    indexSet.first.map { viewModel.deleteApp(apps[$0].uuid) }
                 }
             }
         }

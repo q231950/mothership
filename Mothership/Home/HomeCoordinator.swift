@@ -1,21 +1,13 @@
 import Foundation
 import SwiftUI
-import ArchitectureX
+import Architecture
 import UIKit
 
 class HomeCoordinator: Coordinator {
 
-    let navigator: Navigator
+    var router: Router? = Router()
 
-    internal init(navigator: Navigator) {
-        self.navigator = navigator
+    var contentView: some View {
+        HomeView(viewModel: HomeViewModel(coordinator: self))
     }
-
-    var view: some View {
-        let interactor = HomeInteractor(coordinator: self)
-
-        return HomeView(viewModel: HomeViewModel(), interactor: interactor)
-    }
-
-
 }
