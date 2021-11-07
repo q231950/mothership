@@ -3,10 +3,6 @@ import SwiftUI
 
 struct HomeView: View {
 
-    private enum Content {
-        case apps
-    }
-
     @ObservedObject var viewModel: HomeViewModel
 
     var body: some View {
@@ -22,5 +18,11 @@ struct HomeView: View {
             Image(systemName: "info.circle.fill")
                 .scaleEffect(1.1)
         }))
+    }
+}
+
+private extension HomeView {
+    enum Content {
+        case apps
     }
 }

@@ -9,14 +9,14 @@ class HomeViewModel: ObservableObject {
 
     init(coordinator: HomeCoordinator) {
         self.coordinator = coordinator
-//        Timer.scheduledTimer(withTimeInterval: 2, repeats: true) { timer in
-//            self.title = "Mothership \((1..<10).randomElement() ?? 0)"
-//        }
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
+            self.title = "Mothership \((1..<10).randomElement() ?? 0)"
+        }
     }
 
     func showApps() {
         let repository = RemoteAppsRepository(baseUrl: Configuration.API.baseURL)
-        coordinator.transition(.present(modalInPresentation: false), to: AppsCoordinator(repository: repository))
+        coordinator.transition(.fullscreenModal, to: AppsCoordinator(repository: repository))
     }
 
     func showInfo() {

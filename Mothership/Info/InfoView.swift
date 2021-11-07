@@ -28,8 +28,8 @@ struct InfoView: View {
                                 Button(action: {
             viewModel.dismiss()
         }) {
-            Image(systemName: "xmark")
-                .scaleEffect(1.1)
+            Image(systemName: "xmark.circle")
+                .scaleEffect(1.3)
         })
     }
 }

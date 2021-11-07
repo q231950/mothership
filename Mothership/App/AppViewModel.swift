@@ -13,7 +13,7 @@ class AppViewModel: ObservableObject {
     @Published var versionsSample = [Version]()
     @Published var hasMoreVersions = false
 
-    private let maxSampleCount = 2
+    private let maxSampleCount = 1
     private var cancellables = Set<AnyCancellable>()
     private var coordinator: AppCoordinator
 
@@ -61,8 +61,6 @@ class AppViewModel: ObservableObject {
     }
 
     func showVersions(_ versions: [Version]) {
-//        coordinator.transition(.push) {
-//            VersionsCoordinator(navigator: navigator, versions: versions)
-//        }
+        coordinator.transition(.present(modalInPresentation: false), to: VersionsCoordinator(versions: versions))
     }
 }
