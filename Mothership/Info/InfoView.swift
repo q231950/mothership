@@ -17,7 +17,9 @@ struct InfoView: View {
                     Text("Latest Stable Mothership")
 
                     Image(systemName: "arrow.down.circle")
-                        .scaleEffect(1.1)
+                        .resizable()
+                        .frame(width: 24, height: 24)
+                        .scaledToFit()
                 }
             }
 
@@ -28,8 +30,12 @@ struct InfoView: View {
                                 Button(action: {
             viewModel.dismiss()
         }) {
-            Image(systemName: "xmark.circle")
-                .scaleEffect(1.3)
+            HStack {
+                Image(systemName: "xmark.circle")
+                    .resizable()
+                    .frame(width: 30, height: 30)
+                    .scaledToFit()
+            }
         })
     }
 }

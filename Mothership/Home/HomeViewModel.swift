@@ -4,7 +4,7 @@ import Services
 
 class HomeViewModel: ObservableObject {
 
-    @Published var title: String = "Internal Apps"
+    @Published var title: String = "mothership"
     private let coordinator: HomeCoordinator
 
     /// <#Description#>
@@ -12,7 +12,7 @@ class HomeViewModel: ObservableObject {
     init(coordinator: HomeCoordinator) {
         self.coordinator = coordinator
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
-            self.title = "Mothership \((1..<10).randomElement() ?? 0)"
+            self.title = "mothership \((1..<10).randomElement() ?? 0)"
         }
     }
 

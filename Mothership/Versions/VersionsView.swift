@@ -21,7 +21,9 @@ struct VersionsView: View {
             viewModel.dismiss()
         }) {
             Image(systemName: "xmark.circle")
-                .scaleEffect(1.3)
+                .resizable()
+                .frame(width: 22, height: 22)
+                .scaledToFit()
         })
     }
 }

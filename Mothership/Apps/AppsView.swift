@@ -29,7 +29,9 @@ struct AppsView: View {
             viewModel.dismiss()
         }) {
             Image(systemName: "xmark.circle")
-                .scaleEffect(1.3)
+                .resizable()
+                .frame(width: 30, height: 30)
+                .scaledToFit()
         })
     }
 

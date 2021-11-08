@@ -50,7 +50,9 @@ struct UploadsSection: View {
                         viewModel.install(upload.uuid)
                     }) {
                         Image(systemName: "arrow.down.circle")
-                            .scaleEffect(1.1)
+                            .resizable()
+                            .frame(width: 22, height: 22)
+                            .scaledToFit()
                     }
                 }
 

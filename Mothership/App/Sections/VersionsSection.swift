@@ -28,7 +28,9 @@ struct VersionsSection: View {
                         Spacer()
 
                         Image(systemName: "square.stack.3d.down.forward")
-                            .scaleEffect(1.1)
+                            .resizable()
+                            .frame(width: 22, height: 22)
+                            .scaledToFit()
                     }
                 }
             }

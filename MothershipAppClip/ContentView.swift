@@ -14,7 +14,9 @@ struct ContentView: View {
                         Text("Download")
 
                         Image(systemName: "arrow.down.circle")
-                            .scaleEffect(1.1)
+                            .resizable()
+                            .frame(width: 22, height: 22)
+                            .scaledToFit()
                     }
                 }
             }
