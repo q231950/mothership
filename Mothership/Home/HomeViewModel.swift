@@ -7,6 +7,8 @@ class HomeViewModel: ObservableObject {
     @Published var title: String = "Internal Apps"
     private let coordinator: HomeCoordinator
 
+    /// <#Description#>
+    /// - Parameter coordinator: <#coordinator description#>
     init(coordinator: HomeCoordinator) {
         self.coordinator = coordinator
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
@@ -16,11 +18,11 @@ class HomeViewModel: ObservableObject {
 
     func showApps() {
         let repository = RemoteAppsRepository(baseUrl: Configuration.API.baseURL)
-        coordinator.transition(.fullscreenModal, to: AppsCoordinator(repository: repository))
+        coordinator.transition(to: AppsCoordinator(repository: repository), style: .fullscreenModal)
     }
 
     func showInfo() {
-        coordinator.transition(.present(modalInPresentation: false), to: InfoCoordinator())
+        coordinator.transition(to: InfoCoordinator(), style: .present(modalInPresentation: false))
     }
 
 

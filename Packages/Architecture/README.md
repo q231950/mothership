@@ -1,3 +1,5 @@
 # Architecture
 
-A description of this package.
+## Coordinator
+
+## Router

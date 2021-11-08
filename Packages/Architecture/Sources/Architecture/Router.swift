@@ -1,19 +1,26 @@
 import Foundation
 import SwiftUI
 
+/// Holds the information the state of a view routing to another view
 public class Router: ObservableObject {
-    public unowned var parent: Router?
 
-    @Published public var showingSheet = false
-    public var sheet: AnyView = AnyView(EmptyView())
+    /// The parent ``Router``. This property is used to dismiss or ``Coordinator/pop()``
+    unowned var parent: Router?
 
-    @Published public var showingFullscreenModal = false
-    public var fullscreenModal: AnyView = AnyView(EmptyView())
+    @Published var showingSheet = false
+    var sheet: AnyView = AnyView(EmptyView())
 
-    @Published public var isNavigationLinkActive = false
+    @Published var showingFullscreenModal = false
+    var fullscreenModal: AnyView = AnyView(EmptyView())
+
+    @Published var isNavigationLinkActive = false
     var navigationLinkDestination: AnyView = AnyView(EmptyView())
 
-    public init(parent: Router? = nil) {
+    public init() {}
+
+    /// Initialize a Router with a given parent.
+    /// - Parameter parent: The parent of the new ``Router``
+    init(parent: Router? = nil) {
         self.parent = parent
     }
 }

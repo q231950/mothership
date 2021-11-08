@@ -26,8 +26,8 @@ struct ViewCoordinator: ViewModifier {
 
     /// Hiding the navigation bar is possible with view modifiers:
     /// ```swift
-    ///  Button("present") {
-    ///   interactor.presentContentB()
+    /// Button("present") {
+    ///   viewModel.presentContentB()
     /// }
     /// .navigationBarTitle("")
     /// .navigationBarHidden(true)

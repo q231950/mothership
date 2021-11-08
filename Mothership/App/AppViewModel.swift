@@ -61,6 +61,6 @@ class AppViewModel: ObservableObject {
     }
 
     func showVersions(_ versions: [Version]) {
-        coordinator.transition(.present(modalInPresentation: false), to: VersionsCoordinator(versions: versions))
+        coordinator.transition(to: VersionsCoordinator(versions: versions), style: .present(modalInPresentation: false))
     }
 }

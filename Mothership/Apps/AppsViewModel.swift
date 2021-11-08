@@ -37,7 +37,7 @@ class AppsViewModel: ObservableObject {
 
     func showApp(_ app: App) {
         let repository = RemoteAppRepository(baseUrl: Configuration.API.baseURL, uuid: app.uuid)
-        coordinator.transition(.push, to: AppCoordinator(app: app, repository: repository))
+        coordinator.transition(to: AppCoordinator(app: app, repository: repository), style: .push)
     }
 
     func deleteApp(_ uuid: UUID) {

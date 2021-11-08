@@ -9,6 +9,9 @@ public struct Installer {
         self.baseUrl = baseUrl
     }
 
+    /// <#Description#>
+    /// - Parameter uuid: <#uuid description#>
+    /// - Returns: <#description#>
     public func installUrl(for uuid: UUID) -> URL? {
         URL(string: "itms-services://?action=download-manifest&url=\(baseUrl)/install/\(uuid.uuidString)/install.plist")
     }
